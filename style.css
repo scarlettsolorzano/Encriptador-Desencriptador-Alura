@@ -1,0 +1,105 @@
+body{
+    background: #e5e5e5; /*color de fondo*/
+}
+.logo{
+    padding-top: 10px; /*margen de arriba*/
+    margin-left: 10px; /*margen de los lados*/
+    width: 10%; /*tamaño de ancho*/
+}
+main{
+    display: flex; /*para que se muestren los elementos en linea*/
+    margin-bottom: 10px; /*margen de abajo*/
+    margin-left: 180px; /*margen de los lados*/
+}
+#lado_encriptador_mensaje{
+
+    height: 400px;  /* tamaño de altura */
+    border: none; /*quita el borde del textarea*/
+    border-radius: 12px; /*bordes redondeados*/
+    color: #0A3871; /*color de la letra*/
+    margin-top: 20px; /*margen de altura*/
+    padding: 2px; /*margen de los lados*/
+    text-transform: lowercase; /*para que la letra se muestre en minuscula*/
+}
+::placeholder { color: #0A3871; }
+  #lado_encriptador_mensaje:focus {
+        outline: none; /*quita el borde azul que aparece al seleccionar el textarea*/
+    }
+.nota{
+    color: #8d8d99; /*color de la letra*/
+    font-size:10px; /*tamaño de la letra*/
+    margin-top: auto; /*margen de arriba*/
+}
+.botones{
+    display: flex; /*para que se muestren los elementos en linea*/
+    margin-top: 18px; /*margen de arriba*/
+}
+.btn_encriptar{
+    background-color: #0A3871; /*color de fondo*/
+    border: 2px solid #0A3871; /*borde del boton*/
+    border-radius: 50px; /*bordes redondeados*/
+    color: white; /*color de la letra*/
+    cursor: pointer; /*cambia el cursor a mano*/
+    height: 60px; /*tamaño de altura*/
+    width: 200px; /*tamaño de ancho*/
+}
+.btn_desencriptar {
+    background: #D8DFE8; /*color de fondo*/
+    border: 1px solid #0A3871; /*borde del boton*/
+    border-radius: 24px; /*bordes redondeados*/
+    color: #0A3871; /*color de la letra*/
+    cursor: pointer; /*cambia el cursor a mano*/
+    height: 60px; /*tamaño de altura*/
+    width: 180px; /*tamaño de ancho*/
+    margin-left: 20px;  /*margen de los lados*/
+}
+#lado_desencriptador_img{ /*cuadro cuando NO hay texto*/
+    height: 400px; /*tamaño de altura*/
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-left: 98px;
+    margin-top: 20px; /*margen de arriba*/
+    padding-left: 20px; /*margen de los lados*/
+
+    /*editar texto CUANDO TENGA TIEMPO*/
+  
+    background-image: url("img/personajeDesenciptador.png"); /*imagen de fondo*/
+    background-repeat: no-repeat; /*para que la imagen no se repita*/
+    background-position: center; /*para que la imagen se muestre en el centro*/
+}
+
+#lado_desencriptador_mensaje{/*cuadro cuando SI hay texto*/
+    height: 400px; /*tamaño de altura*/
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-left: 98px;
+    margin-top: 20px; /*margen de arriba*/
+    padding-left: 20px; /*margen de los lados*/
+}
+
+::placeholder { color: #0A3871; } /*color de la letra*/
+  #lado_desencriptador_img { /*quita el borde azul que aparece al seleccionar el textarea*/
+      outline: none; 
+    }
+
+::placeholder { color: #0A3871; } /*color de la letra*/
+    #lado_desencriptador_mensaje { /*quita el borde azul que aparece al seleccionar el textarea*/
+        outline: none; 
+    }
+
+
+.btn_copiarMsj{  
+    background-color: #0A3871; /*color de fondo*/
+    border: 2px solid #0A3871; /*borde del boton*/ 
+    border-radius: 50px; /*bordes redondeados*/ 
+    color: white; /*color de la letra*/ 
+    cursor: pointer; /*cambia el cursor a mano*/ 
+    height: 60px; /*tamaño de altura*/
+    width: 300px;  /*tamaño de ancho*/
+    margin-left: 150px; /*margen de los lados*/
+    margin-top: 65px; /*margen de arriba*/
+    position: relative; /*para que se muestre en la parte inferior*/
+    display:flex; /*para que no se muestre*/
+}
